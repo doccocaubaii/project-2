@@ -61,3 +61,9 @@ input::placeholder {
     justify-content: center;
     align-items: center;
 }
+.listGroup{
+    height: calc(67% - 70px);
+    background-colorolor: aqua;
+    overflow-y: auto;
+    border-bottom: 1px solid #61dafb;
+}

@@ -10,7 +10,7 @@ function NonLogin() {
     return (
     <React.Fragment>
         <Header/>
-        <div className="d-flex" style={{height:"94vh"}}>
+        <div className="d-flex" style={{height:"94vh", minHeight:"625px"}}>
             <Sidebar></Sidebar>
             <div  className="centerDiv">
                 <Outlet />

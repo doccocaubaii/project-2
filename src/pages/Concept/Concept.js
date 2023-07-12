@@ -1,6 +1,6 @@
 import styles from './Concept.module.css';
 import React, {useState} from "react";
-import {Button, Form} from "react-bootstrap";
+import {Button, Form, ListGroup} from "react-bootstrap";
 
 function Concept() {
     const [concept, setConcept] = useState(0);
@@ -11,12 +11,33 @@ function Concept() {
             <div className={styles.divA}>
                 <TextControls  style={{width:'40%'}} name="Concept Name" placeholder="Enter new concept (*)" isRequired="true"></TextControls>
                 <TextControls  style={{width:'40%'}} name="Concept definition"  placeholder="Enter concept definition" ></TextControls>
-                <Button variant="primary" style={{marginTop:'14px',minWidth:'87px'}}>Show</Button>{' '}
+                <Button variant="primary" style={{marginTop:'14px',minWidth:'87px'}}>Add</Button>{' '}
 
             </div>
             <div className={styles.divB}>
                 <div className={styles.divB1}>
                     <SearchControls  style={{}} name="Child" placeholder="Search concept" ></SearchControls>
+                    <div class={styles.listGroup}>
+                        <ListGroup>
+                            {/*<ListGroup.Item>No style</ListGroup.Item>*/}
+                            <ListGroup.Item action variant="primary">Primary</ListGroup.Item>
+                            <ListGroup.Item action variant="primary">Primary</ListGroup.Item>
+                            <ListGroup.Item action variant="primary">Primary</ListGroup.Item>
+                            <ListGroup.Item action variant="primary">Primary</ListGroup.Item>
+                            <ListGroup.Item action variant="primary">Primary</ListGroup.Item>
+                            <ListGroup.Item action variant="primary">Primary</ListGroup.Item>
+                            <ListGroup.Item action variant="primary">Primary</ListGroup.Item>
+                            <ListGroup.Item action variant="primary">Primary</ListGroup.Item>
+                        </ListGroup>
+                    </div>
+                    <Form.Group className="mb-3" style={{height:"30%"}} controlId="exampleForm.ControlInput1">
+                        <Form.Label style={{}}>Definition </Form.Label>
+                        <Form.Control
+                            as="textarea"
+                            placeholder="Leave a comment here"
+                            style={{ height: "calc(100% - 27px)" }}
+                        />
+                    </Form.Group>
                 </div>
                 <div className={styles.divB2 + ' ' +styles.centerElementInside}>
                     <SelectControls></SelectControls>
@@ -24,6 +45,27 @@ function Concept() {
                 </div>
                 <div className={styles.divB1}>
                     <SearchControls  style={{}} name="Parent" placeholder="Search concept" ></SearchControls>
+                    <div className={styles.listGroup}>
+                        <ListGroup>
+                            {/*<ListGroup.Item>No style</ListGroup.Item>*/}
+                            <ListGroup.Item action variant="primary">Primary</ListGroup.Item>
+                            <ListGroup.Item action variant="primary">Primary</ListGroup.Item>
+                            <ListGroup.Item action variant="primary">Primary</ListGroup.Item>
+                            <ListGroup.Item action variant="primary">Primary</ListGroup.Item>
+                            <ListGroup.Item action variant="primary">Primary</ListGroup.Item>
+                            <ListGroup.Item action variant="primary">Primary</ListGroup.Item>
+                            <ListGroup.Item action variant="primary">Primary</ListGroup.Item>
+                            <ListGroup.Item action variant="primary">Primary</ListGroup.Item>
+                        </ListGroup>
+                    </div>
+                    <Form.Group className="mb-3" style={{height: "30%"}} controlId="exampleForm.ControlInput1">
+                        <Form.Label style={{}}>Definition </Form.Label>
+                        <Form.Control
+                            as="textarea"
+                            placeholder="Leave a comment here"
+                            style={{height: "calc(100% - 27px)"}}
+                        />
+                    </Form.Group>
                 </div>
             </div>
             <div className={styles.divC}>
