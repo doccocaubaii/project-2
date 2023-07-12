@@ -1,0 +1,12 @@
+.blockUnit{
+    margin-inline: 15px;
+}
+.centerElementInside
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.activeLink{
+    color: darkorange;
+}

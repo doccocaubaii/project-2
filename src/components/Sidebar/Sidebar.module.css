@@ -1,0 +1,14 @@
+.rectangleDiv {
+    border-radius: 30px;
+    background-color: #fff;
+    width: 100%;
+    height: 140px;
+    padding-top: 29px;
+    padding-left: 22px;
+    margin-bottom: 47px;
+}
+.total{
+    width:220px;
+    background-color:#f7f1f1;
+    padding: 50px 28px 135px 28px;
+}

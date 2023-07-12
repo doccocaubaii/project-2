@@ -1,0 +1,63 @@
+.mcontainer{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    padding-inline: 18px;
+}
+
+.divA{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #d9d9d9;
+    width: 100%;
+    height: 15%;
+}
+
+.divB{
+    padding-top: 25px;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    padding-bottom: 25px;
+}
+
+.divC{
+    background-color: #d9d9d9;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#1C3AA9;
+}
+
+
+.divB1{
+    width: 40%;
+    background-color: #d9d9d9;
+}
+.divB2{
+    width: 25%;
+}
+
+input::placeholder {
+    font-weight: 100;
+    font-size: 0.9em;
+    opacity: 0.1;
+}
+.iconSearch{
+    position:  absolute;
+    right: 10px;
+    top: 44px;
+}
+.relative{
+    position: relative;
+}
+.centerElementInside
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
