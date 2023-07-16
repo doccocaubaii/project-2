@@ -85,8 +85,10 @@ function Header() {
                         </div>
                     </Link>
                 </div>
-                <div className="ms-auto">
-                    <span>Name</span>
+                <div className="ms-auto me-5 d-flex align-items-center">
+                    <div class={styles.avt}>
+                    </div>
+                    <strong>Name</strong>
                 </div>
             </div>
         </>

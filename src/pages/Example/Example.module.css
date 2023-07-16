@@ -1,0 +1,75 @@
+.mcontainer{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    padding-inline: 18px;
+}
+.A{
+    height: 35%;
+    display: flex;
+}
+.A1{
+    width: 35%;
+    background-color: white;
+}
+.divA2{
+    width: 25%;
+}
+.centerElementInside
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.myLabel {
+    width: 146px;
+    height: 37px;
+    background-color: #BCBBBB;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+.divA3{
+    width: 40%;
+    background-color: #d9d9d9;
+    padding: 6px 12px;
+}
+input::placeholder {
+    font-weight: 100;
+    font-size: 0.9em;
+    opacity: 0.1;
+}
+.iconSearch{
+    position:  absolute;
+    right: 32px;
+    top: 92px;
+}
+.divB{
+    display: flex;
+    padding-top: 20px;
+}
+.divB1{
+    display: flex;
+    width: 60%;
+    flex-wrap: wrap;
+}
+.divB11{
+    width: 50%;
+    display: flex;
+}
+.divB2{
+    width: 40%;
+}
+.divB21{
+    background-color: #d9d9d9;
+    padding: 6px 12px;
+    width: 100%;
+}
+.divB22{
+    padding-top: 30px;
+}

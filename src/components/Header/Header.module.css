@@ -10,3 +10,11 @@
 .activeLink{
     color: darkorange;
 }
+.avt{
+    width: 30px; /* Điều chỉnh kích thước của phần tử hình tròn */
+    height: 30px;
+    margin-right: 5px;
+    border-radius: 50%; /* Tạo hình tròn */
+    background-image: url("/public/assets/images/panda.jpg"); /* Đường dẫn đến ảnh JPG */
+    background-size: cover; /* Đảm bảo ảnh được hiển thị đầy đủ trong phần tử */
+}

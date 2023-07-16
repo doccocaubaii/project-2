@@ -5,6 +5,7 @@ import {normalRoutes} from "./routes/routes";
 import Login from "./pages/Login/Login";
 import Header from "./components/Header/Header";
 import Sidebar from "./components/Sidebar/Sidebar";
+import PageNotFound from "./pages/PageNotFound/PageNotFound";
 
 function NonLogin() {
     return (
@@ -36,6 +37,7 @@ function App() {
                     );
                 })}
                 </Route>
+                <Route path="*" element={<PageNotFound />} />
             </Routes>
         </Router>
     );

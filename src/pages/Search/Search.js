@@ -1,22 +1,17 @@
-import styles from "./Example.module.css"
-import {Button, Form, FormLabel, ListGroup} from "react-bootstrap";
-import React from "react";
-import {findAllByDisplayValue} from "@testing-library/react";
+import styles from './Search.module.css';
+import React, {useState} from "react";
+import {Button, Form, ListGroup} from "react-bootstrap";
 
-function Example() {
+function Search(){
     return (
         <div className={styles.mcontainer}>
             <div className={styles.A}>
                 <div className={styles.A1}>
                     <Form.Control
                         as="textarea"
-                        placeholder="Enter example"
+                        placeholder="Enter keyword search example"
                         style={{height: "100%"}}
                     />
-                </div>
-                <div className={styles.divA2 + ' ' + styles.centerElementInside}>
-                    <MyLabel name="Relation"></MyLabel>
-                    <SelectControls></SelectControls>
                 </div>
                 <div className={styles.divA3}>
                     <SearchControls style={{}} name="Concept" placeholder="Search concept"></SearchControls>
@@ -36,62 +31,42 @@ function Example() {
                 <div className={styles.divB1}>
                     <div className={styles.divB11}>
                         <MyLabel2 name="Tone"></MyLabel2>
-                        <div>
-                            <Form.Select aria-label="Chose Relation" >
-                                <option value="1">Neutral</option>
-                                <option value="2">Association</option>
-                                <option value="3">Type of</option>
+                        <div style={{minWidth:"103px"}}>
+                            <Form.Select aria-label="Chose Relation">
+                                <option value="1">All</option>
                             </Form.Select>
                         </div>
                     </div>
                     <div className={styles.divB11}>
                         <MyLabel2 name="Mode"></MyLabel2>
-                        <div>
-                            <Form.Select aria-label="Chose Relation" >
-                                <option value="1">Neutral</option>
-                                <option value="2">Association</option>
-                                <option value="3">Type of</option>
+                        <div style={{minWidth:"103px"}}>
+                            <Form.Select aria-label="Chose Relation">
+                                <option value="1">All</option>
                             </Form.Select>
                         </div>
                     </div>
                     <div className={styles.divB11}>
                         <MyLabel2 name="Register"></MyLabel2>
-                        <div>
-                            <Form.Select aria-label="Chose Relation" >
-                                <option value="1">Neutral</option>
-                                <option value="2">Association</option>
-                                <option value="3">Type of</option>
+                        <div style={{minWidth:"103px"}}>
+                            <Form.Select aria-label="Chose Relation">
+                                <option value="1">All</option>
                             </Form.Select>
                         </div>
                     </div>
                     <div className={styles.divB11}>
                         <MyLabel2 name="Nuance"></MyLabel2>
-                        <div>
-                            <Form.Select aria-label="Chose Relation" >
-                                <option value="1">Neutral</option>
-                                <option value="2">Association</option>
-                                <option value="3">Type of</option>
+                        <div style={{minWidth:"103px"}}>
+                            <Form.Select aria-label="Chose Relation">
+                                <option value="1">All</option>
                             </Form.Select>
                         </div>
                     </div>
                     <div className={styles.divB11}>
                         <MyLabel2 name="Dialect"></MyLabel2>
-                        <div>
+                        <div style={{minWidth:"103px"}}>
                             <Form.Select aria-label="Chose Relation" >
-                                <option value="1">Neutral</option>
-                                <option value="2">Association</option>
-                                <option value="3">Type of</option>
+                                <option value="1">All</option>
                             </Form.Select>
-                        </div>
-                    </div>
-                    <div className={styles.divB11} style={{width:"100%"}}>
-                        <MyLabel2 name="Notes"></MyLabel2>
-                        <div  style={{width:"70%"}}>
-                            <Form.Control
-                                as="textarea"
-                                placeholder="definition"
-                                rows="3"
-                            />
                         </div>
                     </div>
                 </div>
@@ -102,11 +77,26 @@ function Example() {
                             <Form.Label style={{fontWeight: "bold"}}>Linked concept </Form.Label>
                             <div style={{overflowY:"auto", maxHeight:"70px", backgroundColor:"white"}}>
                                 <ul>
-                                    <li>Concept 1</li>
-                                    <li>Concept 2</li>
-                                    <li>Concept 2</li>
-                                    <li>Concept 2</li>
-                                    <li>Concept 2</li>
+                                    <li><span style={{color:"red", marginLeft:"5px", marginRight:"15px"}}>
+                                          [x]
+                                        </span>Concept 1
+                                    </li>
+                                    <li><span style={{color:"red", marginLeft:"5px", marginRight:"15px"}}>
+                                          [x]
+                                        </span>Concept 2
+                                    </li>
+                                    <li><span style={{color:"red", marginLeft:"5px", marginRight:"15px"}}>
+                                          [x]
+                                        </span>Concept 2
+                                    </li>
+                                    <li><span style={{color:"red", marginLeft:"5px", marginRight:"15px"}}>
+                                          [x]
+                                        </span>Concept 2
+                                    </li>
+                                    <li><span style={{color:"red", marginLeft:"5px", marginRight:"15px"}}>
+                                          [x]
+                                        </span>Concept 2
+                                    </li>
                                 </ul>
                             </div>
                         </Form.Group>
@@ -114,25 +104,27 @@ function Example() {
                     <div className={styles.divB22}>
                         <div className="form-check">
                             <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                                <label className="form-check-label" htmlFor="flexCheckDefault">
-                                    Re-use the same parameters when reset
-                                </label>
+                            <label className="form-check-label" htmlFor="flexCheckDefault">
+                                Save last search parameters
+                            </label>
                         </div>
                         <div className="d-flex">
-                            <button type="button" className="btn btn-danger me-4" >Delete</button>
-                            <button type="button" className="btn btn-primary">Save & Exit</button>
+                            <button type="button" style={{width:"150px"}} className="btn btn-primary">Search</button>
                         </div>
 
                     </div>
 
                 </div>
             </div>
+            <div className={styles.divC}>
+                <span><strong>Search results</strong>: No data</span>
+            </div>
         </div>
 
     );
 }
 
-export default Example;
+export default Search;
 
 function SelectControls() {
     return (
